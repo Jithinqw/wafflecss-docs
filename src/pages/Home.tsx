@@ -26,6 +26,9 @@ const Home = () => {
                     }}
                 />
             </div>
+            <div className='wrapper'>
+                <a href='https://github.com/Jithinqw/wafflecss'>Github</a>
+            </div>
         </div>
     )
 }
