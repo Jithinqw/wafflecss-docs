@@ -1,6 +1,4 @@
-import {
-    Heading
-} from 'wafflecss';
+import { Heading } from 'wafflecss';
 import './Home.css';
 
 const Home = () => {
@@ -15,19 +13,33 @@ const Home = () => {
                         size: 'extralarge'
                     }}
                 />
+                <sup>
+                    <Heading 
+                        data={{
+                            headingText: 'Beta'
+                        }}
+                        options={{
+                            size: 'normal',
+                            weight: 'bold',
+                            style: 'italics'
+                        }}
+                    />
+                </sup>
             </div>
             <div className='wrapper'>
                 <Heading 
                     data={{
-                        headingText: 'These pages are build with WaffleCSS, eventhough it is still in Beta.'
+                        headingText: 'These pages are build with WaffleCSS.'
                     }}
                     options={{
-                        size: 'large'
+                        size: 'large',
                     }}
                 />
             </div>
             <div className='wrapper'>
-                <a href='https://github.com/Jithinqw/wafflecss'>Github</a>
+                <a href='https://github.com/Jithinqw/wafflecss'>
+                    Github
+                </a>
             </div>
         </div>
     )

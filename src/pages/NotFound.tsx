@@ -13,7 +13,6 @@ const NotFound = () => {
                         size: 'extralarge'
                     }}
                 />
-                
             </div>
             <div className='wrapper'>
                 <Heading 
