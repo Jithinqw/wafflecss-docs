@@ -1,0 +1,30 @@
+.headerMain {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.mobileHeader {
+    width: 100%; 
+    height: 100%;
+    background-color: black;
+}
+
+@media only screen and (min-width:1024px){
+    .headerMain {
+        display: none;
+    }
+    .mobileHeader {
+        display: none;
+    }
+}
+
+/* Tablet */
+@media only screen and (min-width: 429px) and (max-width:1023px){
+    .headerMain {
+        display: none;
+    }
+    .mobileHeader {
+        display: none;
+    }
+}

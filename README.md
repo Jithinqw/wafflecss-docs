@@ -1,1 +1,2 @@
-# wafflecss-docs
+# Wafflecss Docs
+

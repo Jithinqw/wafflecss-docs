@@ -1,0 +1,13 @@
+.mainContainer {
+    margin-left: 260px;
+    font-size: 28px;
+    padding: 0px 10px;
+}
+
+@media only screen and (max-width: 428px) {
+    .mainContainer {
+        margin-left: 5px;
+        font-size: 18px;
+        padding: 0px 0px;
+    }
+}
