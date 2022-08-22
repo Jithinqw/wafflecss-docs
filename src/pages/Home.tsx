@@ -1,47 +1,22 @@
-import { Heading } from 'wafflecss';
 import './Home.css';
+import NavBar from '../common/NavBar/NavBar';
+import { useEffect } from 'react';
+import { Utilities } from '../api/utilities';
+import Footer from '../common/Footer/Footer';
 
 const Home = () => {
+
+    useEffect(() => {
+        Utilities.titleApi('Home - WaffleCSS');
+    }, []);
+
     return (
-        <div>
-            <div className="wrapper">
-                <Heading 
-                    data={{
-                        headingText: 'We will be back with Docs.'
-                    }}
-                    options={{
-                        size: 'extralarge'
-                    }}
-                />
-                <sup>
-                    <Heading 
-                        data={{
-                            headingText: 'Beta'
-                        }}
-                        options={{
-                            size: 'normal',
-                            weight: 'bold',
-                            style: 'italics'
-                        }}
-                    />
-                </sup>
-            </div>
-            <div className='wrapper'>
-                <Heading 
-                    data={{
-                        headingText: 'These pages are build with WaffleCSS.'
-                    }}
-                    options={{
-                        size: 'large',
-                    }}
-                />
-            </div>
-            <div className='wrapper'>
-                <a href='https://github.com/Jithinqw/wafflecss'>
-                    Github
-                </a>
-            </div>
-        </div>
+        <>
+            
+            <NavBar />
+            <div>dsfsdfsdf</div>
+            <Footer />
+        </>
     )
 }
 
