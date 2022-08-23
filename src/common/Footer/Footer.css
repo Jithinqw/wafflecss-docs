@@ -1,0 +1,26 @@
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   color: white;
+   text-align: center;
+   height: 35px;
+   background: #5f2c82; 
+   background: -webkit-linear-gradient(to right, #5f2c82, #49a09d);
+   background: linear-gradient(to right, #5f2c82, #49a09d);
+}
+
+/* Mobile */
+@media only screen and (max-width: 428px) {
+    .footer {
+        height: 55px;
+    }
+}
+
+/* Tablet */
+@media only screen and (min-width: 429px) and (max-width:1023px){
+    .footer {
+        height: 60px;
+    }
+}
