@@ -1,0 +1,35 @@
+.buttonCover {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    gap: 16px;
+    margin-top: 36px;
+}
+
+.buttonWCover {
+    width: 250px;
+    padding-left: 10px;
+}
+
+/* Mobile */
+@media only screen and (max-width: 428px) {
+    .buttonCover {
+        margin-top: 6px;
+    }
+    .buttonWCover {
+        padding-left: 5px !important;
+    }
+}
+
+@media only screen and (min-width: 429px) and (max-width:1023px){
+    .buttonCover {
+        margin-top: 26px;
+    }
+    .buttonWCover {
+        padding-left: 5px !important;
+    }
+}

@@ -1,5 +1,5 @@
 .navBarContainer {
-    position: fixed;
+    position: relative;
     z-index: 10;
     top: 0;
     left: 0;
@@ -62,5 +62,43 @@
     display: flex;
     justify-content: center;
     cursor: pointer;
-    width: 70px !important;
+    width: 70px;
+}
+
+/* Mobile */
+@media only screen and (max-width: 428px) {
+    .navBariconWrapper {
+        width: 30px;
+    }
+    .navBariconWrapper > span {
+        font-size: 8px;
+    }
+    .storybook {
+        width: 50px;
+    }
+    .storybook > span {
+        font-size: 8px;
+    }
+    .navBarRight {
+        gap: 4px;
+    }
+}
+
+/* Tablet */
+@media only screen and (min-width: 429px) and (max-width:1023px){
+    .navBariconWrapper {
+        width: 80px;
+    }
+    .navBariconWrapper > span {
+        font-size: 20px;
+    }
+    .storybook {
+        width: 100px;
+    }
+    .storybook > span {
+        font-size: 20px;
+    }
+    .navBarRight {
+        gap: 10px;
+    }
 }

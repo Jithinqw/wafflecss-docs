@@ -23,9 +23,6 @@ const Footer = () => {
         <>
             <div className='footer'>
                 <div>
-                    <sup>This site is made with WaffleCSS</sup>
-                </div>
-                <div>
                     <LegalText 
                         data={{
                             displayText: `Proudly made in 🇮🇳 by ${constants.mainAuthor}`
@@ -36,7 +33,6 @@ const Footer = () => {
                                 color: 'white'
                             }
                         }}
-                        
                     />
                 </div>
             </div>

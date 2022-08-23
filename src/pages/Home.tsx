@@ -3,6 +3,7 @@ import NavBar from '../common/NavBar/NavBar';
 import { useEffect } from 'react';
 import { Utilities } from '../api/utilities';
 import Footer from '../common/Footer/Footer';
+import Hero from '../common/Hero/Hero';
 
 const Home = () => {
 
@@ -12,9 +13,10 @@ const Home = () => {
 
     return (
         <>
-            
             <NavBar />
-            <div>dsfsdfsdf</div>
+                <div className='homeMainContainer'>
+                    <Hero />
+                </div>
             <Footer />
         </>
     )

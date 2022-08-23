@@ -3,8 +3,6 @@ import {
     LegalText, 
 } from 'wafflecss';
 import './NavBar.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPlay } from '@fortawesome/free-solid-svg-icons';
 import { Utilities } from '../../api/utilities';
 import waffleConstants from '../../api/constants';
 
@@ -28,22 +26,9 @@ const NavBar = () => {
         }
     }
 
-    const resolveIconSize = () => {
-        const screensize = Utilities.resolveScreenSize();
-        switch(screensize) {
-            case 'desktop':
-                return '2x';
-            case 'mobile':
-                return '1x';
-            case 'tablet':
-                return '2x';
-            default:
-                return '2x';
-        }
-    }
-
     /**
      * @function githubClickEvent
+     * @returns {void}
      */
     const githubClickEvent = ():void => {
         window.open(
@@ -54,6 +39,7 @@ const NavBar = () => {
 
     /**
      * @function storybookClickEvent
+     * @returns {void}
      */
     const storybookClickEvent = ():void => {
         window.open(
@@ -65,11 +51,13 @@ const NavBar = () => {
     /**
      * @function keyDowngithubClickEvent
      * @param {React.KeyboardEvent<HTMLDivElement>} e 
+     * @returns {void}
      */
     const keyDowngithubClickEvent = (
             e: React.KeyboardEvent<HTMLDivElement>
         ):void => {
         if(e.key === 'Enter') {
+            e.preventDefault();
             githubClickEvent();
         }
     }
@@ -77,11 +65,13 @@ const NavBar = () => {
     /**
      * @function keyDownstorybookClickEvent
      * @param {React.KeyboardEvent<HTMLDivElement>} e  
+     * @returns {void}
      */
     const keyDownstorybookClickEvent = (
             e: React.KeyboardEvent<HTMLDivElement>
         ):void => {
         if(e.key === 'Enter') {
+            e.preventDefault();
             storybookClickEvent();
         }
     }

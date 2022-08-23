@@ -1,3 +1,4 @@
+
 export class Utilities {
 
     /**
@@ -40,4 +41,51 @@ export class Utilities {
     static titleApi(title: string): void {
         document.title = title;
     }
+
+    /**
+     * @function isEmpty
+     * @description Checks if string is empty
+     * @param {string} value
+     * @return {boolean}
+     **/
+     static isEmpty = (value: string): boolean => {
+        // eslint-disable-line
+        return value === null || typeof value === 'undefined' || value === ''
+    }
+
+    /**
+     * @function isEmptyObject
+     * @static
+     * @description Checks if object is empty
+     * @param {T} obj
+     * @returns {boolean}
+     **/
+    static isEmptyObject<T>(obj: T): boolean {
+        return (
+            obj === null ||
+            typeof obj === 'undefined' ||
+            typeof obj !== 'object' ||
+            Object.keys(obj).length === 0
+        )
+    }
+
+    /**
+     * @function interpolateplaceholder
+     * @param {string} textWithPlaceholder 
+     * @param {Array<string>} contnet 
+     * @returns {string}
+     */
+    static interpolateplaceholder = (
+            textWithPlaceholder: string,
+            content: Array<string>
+        ):string => {
+        if(this.isEmpty(textWithPlaceholder) && content.length > 0) {
+            content.map((value, index) => {
+                textWithPlaceholder = textWithPlaceholder.replace('{' + index + '}', value);
+                return textWithPlaceholder;
+            });
+        }
+        return textWithPlaceholder;
+    }
+    
 }
