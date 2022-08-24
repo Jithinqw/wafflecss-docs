@@ -15,8 +15,25 @@
     padding-left: 10px;
 }
 
+
+.heroMainTextContainer {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.heroMainText {
+    font-size: 88px !important;
+    background: linear-gradient(to right, #30CFD0 0%, #330867 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
 /* Mobile */
 @media only screen and (max-width: 428px) {
+    .heroMainText {
+        font-size: 30px !important;
+    }
     .buttonCover {
         margin-top: 6px;
     }
@@ -26,6 +43,9 @@
 }
 
 @media only screen and (min-width: 429px) and (max-width:1023px){
+    .heroMainText {
+        font-size: 70px !important;
+    }
     .buttonCover {
         margin-top: 26px;
     }
