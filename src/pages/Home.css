@@ -2,30 +2,3 @@
     position: absolute;
     background-color: white;
 }
-
-.heroMainTextContainer {
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-    
-}
-
-.heroMainText {
-    font-size: 50px !important;
-    background: linear-gradient(to right, #30CFD0 0%, #330867 100%);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-}
-
-/* Mobile */
-@media only screen and (max-width: 428px) {
-    .heroMainText {
-        font-size: 35px !important;
-    }
-}
-
-@media only screen and (min-width: 429px) and (max-width:1023px){
-    .heroMainText {
-        font-size: 50px !important;
-    }
-}
