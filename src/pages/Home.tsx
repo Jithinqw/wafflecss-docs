@@ -14,9 +14,9 @@ const Home = () => {
     return (
         <>
             <NavBar />
-                <div className='homeMainContainer'>
-                    <Hero />
-                </div>
+            <div className='homeMainContainer'>
+                <Hero />
+            </div>
             <Footer />
         </>
     )

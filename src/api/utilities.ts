@@ -88,4 +88,12 @@ export class Utilities {
         return textWithPlaceholder;
     }
     
+    /**
+     * @function resolveHeading
+     * @param {string} heading 
+     * @returns {string}
+     */
+    static resolveHeading = (heading: string): string => {
+        return heading.replace(/([A-Z])/g, ' $1').trim();
+    }
 }

@@ -1,12 +1,19 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFire, faCompass, faHeart, faHand } from '@fortawesome/free-solid-svg-icons';
+import { 
+    faFire, faCompass,
+    faHeart, faHand 
+} from '@fortawesome/free-solid-svg-icons';
+import { 
+    SizeProp 
+} from '@fortawesome/fontawesome-svg-core';
 import { Heading, Button } from 'wafflecss';
 import waffleCMS from '../../api/cms';
 import { Utilities } from '../../api/utilities';
 import './Hero.css';
-import { SizeProp } from '@fortawesome/fontawesome-svg-core';
+import { useNavigate } from 'react-router-dom';
 
 const Hero = () => {
+    const history = useNavigate();
 
     /**
      * @function resolveButtonSize
@@ -26,26 +33,30 @@ const Hero = () => {
         }
     }
 
+    /**
+     * @function resolveIconSize
+     * @returns {SizeProp}
+     */
     const resolveIconSize = (): SizeProp => {
         const screenSize = Utilities.resolveScreenSize();
         switch(screenSize) {
             case 'desktop':
-                return "3x";
+                return '3x';
             case 'mobile':
-                return "1x";
+                return '1x';
             case 'tablet':
-                return "2x";
+                return '2x';
             default:
                 return "2x";
         }
     }
 
-    const redirectToGithub = () => {
+    const redirectToGithub = (): void => {
         window.open('https://github.com/Jithinqw/wafflecss');
     }
 
-    const redirectToDoc = () => {
-        window.open('');
+    const redirectToDoc = (): void => {
+        history('/docs/install');
     }
 
     /**
