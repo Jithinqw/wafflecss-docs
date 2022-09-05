@@ -22,7 +22,7 @@ const Footer = () => {
     return (
         <>
             <div className='footer'>
-                <div>
+                <div className='footerText'>
                     <LegalText 
                         data={{
                             displayText: `Proudly made in 🇮🇳 by ${constants.mainAuthor}`

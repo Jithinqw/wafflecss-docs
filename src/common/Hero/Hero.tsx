@@ -4,6 +4,7 @@ import {
     faHeart, faHand 
 } from '@fortawesome/free-solid-svg-icons';
 import { 
+    IconDefinition,
     SizeProp 
 } from '@fortawesome/fontawesome-svg-core';
 import { Heading, Button } from 'wafflecss';
@@ -64,7 +65,7 @@ const Hero = () => {
      * @param {number} i 
      * @returns {IconDefinition}
      */
-    const resolveIcon = (i: number) => {
+    const resolveIcon = (i: number):IconDefinition => {
         switch(i) {
             case 0:
                 return faFire;
@@ -113,7 +114,7 @@ const Hero = () => {
                         }}
                         options={{
                             size: resolveButtonSize(),
-                            variants: 'success'
+                            variants: 'success',
                         }}
                         events={{
                             onClick: redirectToGithub

@@ -1,7 +1,14 @@
 const waffleCMS = {
+    mainAppTitle: 'WaffleCSS',
     buttonCMS: [
-        {githubCMS: 'Github', name: 'github'},
-        {getStartedCMS: 'Get Started', name: 'Get Started'},
+        {
+            githubCMS: 'Github', 
+            name: 'github'
+        },
+        {
+            getStartedCMS: 'Get Started',
+            name: 'Get Started'
+        },
     ],
     mainHeading: 'Build your next website even faster with premade responsive components designed and built by Mantine maintainers and community. All components are free forever for everyone.',
     features: [
@@ -24,7 +31,7 @@ const waffleCMS = {
             components: [
                 {
                     componentName:'Install',
-                    componentLink: '/'
+                    componentLink: 'docs/install'
                 },
                 {
                     componentName:'Accessibility',
@@ -41,15 +48,15 @@ const waffleCMS = {
             components: [
                 {
                     componentName:'Announcement',
-                    componentLink: '/'
+                    componentLink: '/docs/components/announcement'
                 },
                 {
                     componentName:'PromotionRibbon',
-                    componentLink: '/'
+                    componentLink: '/docs/components/promoribbion'
                 },
                 {
                     componentName:'TopBanner',
-                    componentLink: '/'
+                    componentLink: '/docs/components/topbanner'
                 },
             ]
         },
@@ -58,7 +65,7 @@ const waffleCMS = {
             components: [
                 {
                     componentName:'Button',
-                    componentLink: '/'
+                    componentLink: '/docs/components/button'
                 },
                 {
                     componentName:'LinkButton',

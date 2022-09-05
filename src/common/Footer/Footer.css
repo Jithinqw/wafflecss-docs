@@ -5,11 +5,17 @@
    width: 100%;
    color: white;
    text-align: center;
-   height: 35px;
+   height: 45px;
    background: #5f2c82; 
    background: -webkit-linear-gradient(to right, #5f2c82, #49a09d);
    background: linear-gradient(to right, #5f2c82, #49a09d);
    z-index: 10;
+}
+
+.footerText {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Mobile */

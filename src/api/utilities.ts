@@ -96,4 +96,36 @@ export class Utilities {
     static resolveHeading = (heading: string): string => {
         return heading.replace(/([A-Z])/g, ' $1').trim();
     }
+
+    static resolveSideBarSize = ():string => {
+        const screensize = this.resolveScreenSize();
+        switch(screensize) {
+            case 'desktop':
+                return '250px';
+            case 'mobile':
+                return '135px';
+            case 'tablet':
+                return '200px';
+            default:
+                return '250px';
+        }
+    }
+
+    /**
+     * @function resolveImageSize
+     * @returns {string}
+     */
+    static resolveImageSize = ():string => {
+        const screensize = this.resolveScreenSize();
+        switch(screensize) {
+            case 'desktop':
+                return '50px';
+            case 'mobile':
+                return '40px';
+            case 'tablet':
+                return '30px';
+            default:
+                return '40px';
+        }
+    }
 }

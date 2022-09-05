@@ -3,7 +3,19 @@ import { Heading } from 'wafflecss';
 import waffleCMS from '../../api/cms';
 import { useNavigate } from 'react-router-dom';
 import { Utilities } from '../../api/utilities';
+import React from 'react';
 
+/**
+ * @function keyDownEvents
+ * @param {React.KeyboardEvent<HTMLParagraphElement>} e 
+ */
+const keyDownEvents = (
+        e: React.KeyboardEvent<HTMLParagraphElement>
+    ):void => {
+    if(e.key.toLowerCase() === 'enter') {
+        e.preventDefault();
+    }
+}
 
 const ResolveSideBarHeading = (e: any, i: number) => {
     
@@ -48,6 +60,9 @@ const ResolveSideBarHeading = (e: any, i: number) => {
                                     }}
                                     options={{
                                         className: 'pad'
+                                    }}
+                                    events={{
+                                        onkeydown: keyDownEvents
                                     }}
                                 />
                             </span>

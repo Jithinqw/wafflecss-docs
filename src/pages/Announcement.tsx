@@ -6,10 +6,10 @@ import { Utilities } from "../api/utilities";
 import { useEffect } from "react";
 import "./Home.css";
 
-const GetStart = () => {
+const Announcement = () => {
 
     useEffect(() => {
-        Utilities.titleApi("Get Started - WaffleCSS");
+        Utilities.titleApi("Announcement - WaffleCSS");
     }, []);
 
     return (
@@ -27,11 +27,11 @@ const GetStart = () => {
                 }}
             />
             <div className="contentContainer">
-                asdasd
+                Announcement
             </div>
             <Footer />
         </>
     )
 }
 
-export default GetStart;
+export default Announcement;

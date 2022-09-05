@@ -6,3 +6,20 @@
 .overflow {
     overflow: scroll;
 }
+
+.contentContainer {
+    margin-left: 250px;
+}
+
+/* Mobile */
+@media only screen and (max-width: 428px) {
+    .contentContainer {
+        margin-left: 135px;
+    }
+}
+
+@media only screen and (min-width: 429px) and (max-width:1023px){
+    .contentContainer {
+        margin-left: 200px;
+    }
+}

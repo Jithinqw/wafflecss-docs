@@ -1,15 +1,16 @@
-import Footer from "../common/Footer/Footer";
+import waffleCMS from "../api/cms";
+import { Utilities } from "../api/utilities";
 import NavBar from "../common/NavBar/NavBar";
 import SideBar from "../common/SideBar/SideBar";
-import { Drawer } from "wafflecss";
-import { Utilities } from "../api/utilities";
-import { useEffect } from "react";
+import { Drawer } from 'wafflecss';
+import Footer from "../common/Footer/Footer";
 import "./Home.css";
+import { useEffect } from "react";
 
-const GetStart = () => {
+const Button = () => {
 
     useEffect(() => {
-        Utilities.titleApi("Get Started - WaffleCSS");
+        Utilities.titleApi("Button - WaffleCSS");
     }, []);
 
     return (
@@ -27,11 +28,11 @@ const GetStart = () => {
                 }}
             />
             <div className="contentContainer">
-                asdasd
+                Button
             </div>
             <Footer />
         </>
     )
 }
 
-export default GetStart;
+export default Button;

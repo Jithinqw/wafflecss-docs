@@ -3,7 +3,8 @@
     align-items: center;
     justify-content: center;
     margin-top: 70px;
-    overflow-y:scroll; 
+    margin-bottom: 70px;
+    overflow-y: scroll; 
 }
 
 .lineBreak {

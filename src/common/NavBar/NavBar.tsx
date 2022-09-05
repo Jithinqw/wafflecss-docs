@@ -1,30 +1,13 @@
 import { 
-    Image, Heading, 
-    LegalText, 
+    Image, Heading, LegalText,
+    Center
 } from 'wafflecss';
 import './NavBar.css';
 import { Utilities } from '../../api/utilities';
 import waffleConstants from '../../api/constants';
+import waffleCMS from '../../api/cms';
 
 const NavBar = () => {
-
-    /**
-     * @function resolveImageSize
-     * @returns {string}
-     */
-    const resolveImageSize = ():string => {
-        const screensize = Utilities.resolveScreenSize();
-        switch(screensize) {
-            case 'desktop':
-                return '50px';
-            case 'mobile':
-                return '40px';
-            case 'tablet':
-                return '30px';
-            default:
-                return '40px';
-        }
-    }
 
     /**
      * @function githubClickEvent
@@ -56,7 +39,7 @@ const NavBar = () => {
     const keyDowngithubClickEvent = (
             e: React.KeyboardEvent<HTMLDivElement>
         ):void => {
-        if(e.key === 'Enter') {
+        if(e.key.toLowerCase() === 'enter') {
             e.preventDefault();
             githubClickEvent();
         }
@@ -85,19 +68,26 @@ const NavBar = () => {
                             data={{
                                 imageSrc: waffleConstants.mainImage,
                                 alt: 'WaffleCSS home image',
-                                height: resolveImageSize(),
-                                width: resolveImageSize()
+                                height: Utilities.resolveImageSize(),
+                                width: Utilities.resolveImageSize()
                             }}
                         />
                     </a>
-                    <Heading 
+                    <Center 
                         data={{
-                            headingText: 'WaffleCSS'
-                        }}
-                        options={{
-                            style: 'normal',
-                            weight: 'normal',
-                            size: 'extralarge'
+                            backgroundColor: 'white',
+                            children: (
+                                <Heading 
+                                    data={{
+                                        headingText: waffleCMS.mainAppTitle
+                                    }}
+                                    options={{
+                                        style: 'normal',
+                                        weight: 'normal',
+                                        size: 'extralarge'
+                                    }}
+                                />
+                            )
                         }}
                     />
                     <div className='navBarRight'>
