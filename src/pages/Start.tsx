@@ -2,9 +2,10 @@
 import Footer from '../common/Footer/Footer';
 import NavBar from '../common/NavBar/NavBar';
 import SideBar from '../common/SideBar/SideBar';
-import {Drawer, Heading, LegalText} from 'wafflecss';
-import {Utilities} from '../api/utilities';
-import {useEffect} from 'react';
+import { Drawer, Heading, LegalText } from 'wafflecss';
+import { Utilities } from '../api/utilities';
+import { useEffect } from 'react';
+import 'papperanimate';
 import './Home.css';
 
 const GetStart = () => {
@@ -25,15 +26,16 @@ const GetStart = () => {
         }}
       />
       <div className="mainContentWrapper">
-        <div>
-          <Heading
-            data={{
-              headingText: 'Get started',
-            }}
-            options={{
-              size: Utilities.resolveHeadingSize(),
-            }}
-          />
+        <div className='papperanimate_animated papperanimate_pulse'>
+            <Heading
+                data={{
+                headingText: 'Getting started',
+                }}
+                options={{
+                size: Utilities.resolveHeadingSize(),
+                }}
+            />
+
         </div>
         <LegalText
           data={{
