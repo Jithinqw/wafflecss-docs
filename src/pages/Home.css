@@ -1,25 +1,58 @@
 .homeMainContainer {
-    position: absolute;
-    background-color: white;
+  position: absolute;
+  background-color: white;
 }
 
 .overflow {
-    overflow: scroll;
+  overflow: scroll;
 }
 
 .contentContainer {
-    margin-left: 250px;
+  margin-left: 250px;
+}
+
+.mainContentContainer {
+  width: 900px;
+}
+
+.codeBlock {
+  padding: 20px;
+  border-radius: 8px;
+  margin: 0 -1rem 3rem;
+  display: block;
+  color: #fff;
+  background-color: #282c34;
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono,
+    Courier New, monospace !important;
+  font-size: 14px;
+  line-height: 20px;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.tokenOperator {
+  color: #d7deea;
+}
+
+.mainContentWrapper {
+  margin-left: 250px;
 }
 
 /* Mobile */
 @media only screen and (max-width: 428px) {
-    .contentContainer {
-        margin-left: 135px;
-    }
+  .contentContainer {
+    margin-left: 135px;
+  }
+  .mainContentWrapper {
+    margin-left: 140px;
+  }
 }
 
-@media only screen and (min-width: 429px) and (max-width:1023px){
-    .contentContainer {
-        margin-left: 200px;
-    }
+@media only screen and (min-width: 429px) and (max-width: 1023px) {
+  .contentContainer {
+    margin-left: 200px;
+  }
+  .mainContentWrapper {
+    margin-left: 200px;
+  }
 }

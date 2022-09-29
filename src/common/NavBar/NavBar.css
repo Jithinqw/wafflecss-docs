@@ -1,104 +1,104 @@
 .navBarContainer {
-    position: relative;
-    z-index: 10;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 60px;
-    background-color: #fff;
-    border-bottom: 1px solid #dee2e6;
+  position: relative;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background-color: #fff;
+  border-bottom: 1px solid #dee2e6;
 }
 
 .navBarWrapper {
-    padding-left: 16px;
-    padding-right: 16px;
-    max-width: 1320px;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 100%;
-    padding-left: 16px;
-    padding-right: 16px;
+  padding-left: 16px;
+  padding-right: 16px;
+  max-width: 1320px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 .navBara {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .navBarRight {
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    gap: 10px;
-    padding-right: 16px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 10px;
+  padding-right: 16px;
 }
 
 .navBariconWrapper {
-    border-radius: 50px;
-    border-color: black;
-    border-width: 0.5px;
-    border-style: solid;
-    width: 50px;
-    display: flex;
-    justify-content: center;
+  border-radius: 50px;
+  border-color: black;
+  border-width: 0.5px;
+  border-style: solid;
+  width: 50px;
+  display: flex;
+  justify-content: center;
 }
 
 .githubIcon {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .storybook {
-    border-radius: 50px;
-    border-color: black;
-    border-width: 0.5px;
-    border-style: solid;
-    display: flex;
-    justify-content: center;
-    cursor: pointer;
-    width: 70px;
+  border-radius: 50px;
+  border-color: black;
+  border-width: 0.5px;
+  border-style: solid;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  width: 70px;
 }
 
 /* Mobile */
 @media only screen and (max-width: 428px) {
-    .navBariconWrapper {
-        width: 30px;
-    }
-    .navBariconWrapper > span {
-        font-size: 8px;
-    }
-    .storybook {
-        width: 50px;
-    }
-    .storybook > span {
-        font-size: 8px;
-    }
-    .navBarRight {
-        gap: 4px;
-    }
+  .navBariconWrapper {
+    width: 30px;
+  }
+  .navBariconWrapper > span {
+    font-size: 8px;
+  }
+  .storybook {
+    width: 50px;
+  }
+  .storybook > span {
+    font-size: 8px;
+  }
+  .navBarRight {
+    gap: 4px;
+  }
 }
 
 /* Tablet */
-@media only screen and (min-width: 429px) and (max-width:1023px){
-    .navBariconWrapper {
-        width: 80px;
-    }
-    .navBariconWrapper > span {
-        font-size: 20px;
-    }
-    .storybook {
-        width: 100px;
-    }
-    .storybook > span {
-        font-size: 20px;
-    }
-    .navBarRight {
-        gap: 10px;
-    }
+@media only screen and (min-width: 429px) and (max-width: 1023px) {
+  .navBariconWrapper {
+    width: 80px;
+  }
+  .navBariconWrapper > span {
+    font-size: 20px;
+  }
+  .storybook {
+    width: 100px;
+  }
+  .storybook > span {
+    font-size: 20px;
+  }
+  .navBarRight {
+    gap: 10px;
+  }
 }

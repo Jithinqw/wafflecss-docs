@@ -1,37 +1,32 @@
-import Footer from "../common/Footer/Footer";
-import NavBar from "../common/NavBar/NavBar";
-import SideBar from "../common/SideBar/SideBar";
-import { Drawer } from "wafflecss";
-import { Utilities } from "../api/utilities";
-import { useEffect } from "react";
-import "./Home.css";
+import Footer from '../common/Footer/Footer';
+import NavBar from '../common/NavBar/NavBar';
+import SideBar from '../common/SideBar/SideBar';
+import {Drawer} from 'wafflecss';
+import {Utilities} from '../api/utilities';
+import {useEffect} from 'react';
+import './Home.css';
 
 const PromoRibbion = () => {
+  useEffect(() => {
+    Utilities.titleApi('PromoRibbion - WaffleCSS');
+  }, []);
 
-    useEffect(() => {
-        Utilities.titleApi("PromoRibbion - WaffleCSS");
-    }, []);
-
-    return (
-        <>
-            <NavBar />
-            <Drawer 
-                data={{
-                    isVisible: true,
-                    children: (
-                        <SideBar />
-                    )
-                }}
-                options={{
-                    width: Utilities.resolveSideBarSize(),
-                }}
-            />
-            <div className="contentContainer">
-                PromoRibbion
-            </div>
-            <Footer />
-        </>
-    )
-}
+  return (
+    <>
+      <NavBar />
+      <Drawer
+        data={{
+          isVisible: true,
+          children: <SideBar />,
+        }}
+        options={{
+          width: Utilities.resolveSideBarSize(),
+        }}
+      />
+      <div className="contentContainer">PromoRibbion</div>
+      <Footer />
+    </>
+  );
+};
 
 export default PromoRibbion;
